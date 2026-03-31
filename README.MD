@@ -1,30 +1,65 @@
-# 📊 Customer Churn Prediction App
+# Customer Churn Prediction App
 
-This is a **Streamlit web application** that predicts customer churn risk using a trained machine learning model.  
-It demonstrates end-to-end data product thinking — from preprocessing and model training to deployment in a user-friendly app.
+An end-to-end machine learning project for predicting customer churn risk and presenting the result through a Streamlit application.
 
----
+## Project Overview
 
-## 🚀 Features
-- Simple form with only valid options (e.g., Gender → Male/Female, Contract → Month-to-month/One year/Two year).
-- Automatic preprocessing (binary mapping + one-hot encoding + scaling).
-- Prediction output:
-  - Churn / No Churn
-  - Probability of churn
-  - Risk segment (High / Medium / Low)
+This project focuses on customer churn prediction using structured customer data, preprocessing logic, a trained classification model, and a simple interactive interface for business-friendly prediction.
 
----
+The application returns:
 
-## ⚙️ How to Run
-1. Clone this repo or download the folder.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+- churn or no-churn prediction
+- churn probability
+- risk segment classification
 
-# Author 
-    Auchitya
-              Persistent and curious data enthusiast, building real-world ML products.
+## Key Features
 
- End-to-End Customer Churn Prediction Project
+- Streamlit-based interface for entering customer attributes
+- preprocessing pipeline for binary mapping, one-hot encoding, and feature alignment
+- trained machine learning model for churn prediction
+- probability-based risk segmentation into high, medium, and low risk
 
-             
+## Tech Stack
+
+- Python
+- pandas
+- scikit-learn
+- joblib
+- Streamlit
+
+## Repository Structure
+
+```text
+app.py
+churn_model.pkl
+scaler.pkl
+requirements.txt
+README.MD
+churn_predection_&_ana__.pdf
+```
+
+## How To Run
+
+1. Create and activate a Python environment
+2. Install dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+3. Start the Streamlit app
+
+```powershell
+streamlit run app.py
+```
+
+## Business Value
+
+This project demonstrates how machine learning can support customer retention by identifying users at high risk of churn and helping teams prioritize intervention strategies.
+
+## What This Project Demonstrates
+
+- applied classification workflow for a business problem
+- preprocessing and feature alignment for inference
+- model deployment through a lightweight user interface
+- practical use of probability outputs instead of only class labels
